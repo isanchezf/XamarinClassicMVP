@@ -2,10 +2,12 @@
 {
     using System;
     using Entities;
+    using Exito.CompanyApp.Droid.MVP.Referentials;
 
-    public interface ILoginView
+    public interface ILoginView : IView
     {
-        void ShowErrorMessage(string msg);
-        void OnLoginSuccess();
+        string Username { get; }
+        string Password { get; }
+        event Action Authenticate;
     }
 }

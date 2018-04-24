@@ -9,10 +9,15 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Exito.CompanyApp.App.Activities;
+using Exito.CompanyApp.App.Container;
+using Exito.CompanyApp.Droid.MVP.Referentials;
+using Exito.CompanyApp.Droid.MVP.Views;
+using Ninject;
 
 namespace Exito.CompanyApp.App
 {
-    [Activity(Label = "SplashActivity")]
+    [Activity(Label = "SplashActivity", MainLauncher = true)]
     public class SplashActivity : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
@@ -20,6 +25,8 @@ namespace Exito.CompanyApp.App
             base.OnCreate(savedInstanceState);
 
             // Create your application here
+            var navigationManager = AndroidApplication.Current._kernel.Get<INavigationManager>();
+            navigationManager.Navigate<ILoginView>(newStack: true);
         }
     }
 }

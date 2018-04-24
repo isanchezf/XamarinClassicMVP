@@ -10,28 +10,37 @@
     using Views;
     using Exito.CompanyApp.Contracts;
     using Ninject;
+    using Exito.CompanyApp.Droid.MVP.Referentials;
 
-    public class LoginPresenter
+    public class LoginPresenter : ILoginPresenter
     {
         ILoginView _loginView;
-        ILoginModel _loginModel;
+        LoginModel _loginModel;
         IKernel _kernel;
+        INavigationManager _navigationManager;
 
-        public LoginPresenter(ILoginView loginView)
+
+        public LoginPresenter(INavigationManager navigationManager)
         {
             var settings = new NinjectSettings(); settings.LoadExtensions = false;
             _kernel = new StandardKernel(settings, new CompanyAppModules());
-            _loginView = loginView;
+            _navigationManager = navigationManager;
             _loginModel = new LoginModel(_kernel.Get<ILoginClient>());
         }
 
-        public void Authenticate(Login login)
+        public void Initialize(IView view, params ViewParameter[] parameters)
         {
+            _loginView = view as ILoginView;
+            _loginView.Authenticate += Authenticate;
+        }
+
+        public void Authenticate()
+        {
+            var login = new Login { UserName = _loginView.Username, Password = _loginView.Password };
             if (_loginModel.Authenticate(login))
             {
-                _loginView.OnLoginSuccess();
+                _navigationManager.Navigate<IWellcomeView>(true, new ViewParameter("currentUser", login.UserName));
             }
-            _loginView.ShowErrorMessage("Credenciales invalidas");
         }
     }
 }

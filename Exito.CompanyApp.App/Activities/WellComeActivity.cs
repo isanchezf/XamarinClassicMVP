@@ -9,22 +9,23 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Exito.CompanyApp.Droid.MVP.Presenter;
+using Exito.CompanyApp.Droid.MVP.Views;
 
 namespace Exito.CompanyApp.App.Activities
 {
     [Activity(Label = "WellComeActivity")]
-    public class WellComeActivity : Activity
+    public class WellComeActivity : BaseActivity<IWellcomePresenter>, IWellcomeView
     {
         TextView userLbl;
+        public string CurrentUser { get => userLbl.Text; set => userLbl.Text = value; }
 
-        protected override void OnCreate(Bundle savedInstanceState)
+        protected override void OnCreate(Bundle bundle)
         {
-            base.OnCreate(savedInstanceState);
-
-            // Create your application here
+            base.OnCreate(bundle);
             SetContentView(Resource.Layout.WellCome);
             userLbl = FindViewById<TextView>(Resource.Id.userLbl);
-            userLbl.Text = Intent.GetStringExtra("userName");
+            Initialize(bundle);
         }
     }
 }

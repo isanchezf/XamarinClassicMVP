@@ -11,50 +11,31 @@
     using Exito.CompanyApp.Contracts;
     using Ninject;
     using Android.Content;
+    using System;
 
-    [Activity(Label = "Exito.CompanyApp.App", MainLauncher = true)]
-    public class MainActivity : Activity, View.IOnClickListener, ILoginView
+    [Activity(Label = "Login")]
+    public class MainActivity : BaseActivity<ILoginPresenter>, ILoginView
     {
-        EditText userNameEditText, passEditText;
-        LoginPresenter _loginPresenter;
-
-        public MainActivity()
-        {
-        }
-
-        public void OnLoginSuccess()
-        {
-            var intent = new Intent(this, typeof(WellComeActivity));
-            intent.PutExtra("userName", userNameEditText.Text);
-            StartActivity(intent);
-        }
-
-        public void ShowErrorMessage(string msg)
-        {
-            System.Diagnostics.Debug.WriteLine(msg);
-        }
+        private EditText userNameEditText, passEditText;
+        private Button LoginButton;
+        public event Action Authenticate;
+        public string Username => userNameEditText.Text;
+        public string Password => passEditText.Text;
 
         protected override void OnCreate(Bundle savedInstanceState)
-        {
+            {
             base.OnCreate(savedInstanceState);
 
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
-            userNameEditText = FindViewById<EditText>(Resource.Id.usernameEdtxt);
-            passEditText = FindViewById<EditText>(Resource.Id.passwordEdtxt);
-            Button button = FindViewById<Button>(Resource.Id.loginBtn);
-            button.SetOnClickListener(this);
-            _loginPresenter = new LoginPresenter(this);
+            this.userNameEditText = FindViewById<EditText>(Resource.Id.usernameEdtxt);
+            this.passEditText = FindViewById<EditText>(Resource.Id.passwordEdtxt);
+            this.LoginButton = FindViewById<Button>(Resource.Id.loginBtn);
+            this.LoginButton.Click += (object sender, EventArgs e) => this.Authenticate?.Invoke();
+            this.Initialize(savedInstanceState);
         }
 
-        public void OnClick(View view)
-        {
-            if (view.Id == Resource.Id.loginBtn)
-            {
-                var login = new Login { UserName = userNameEditText.Text, Password = passEditText.Text };
-                _loginPresenter.Authenticate(login);
-            }
-        }
+        
     }
 }
 

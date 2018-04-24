@@ -3,3 +3,17 @@
 ################################################################################
 
 /.vs/Exito.CompanyApp.App/v15
+/Exito.CompanyApp.App/bin/Debug
+/Exito.CompanyApp.App/obj
+/Exito.CompanyApp.Contracts/bin/Debug/netstandard2.0
+/Exito.CompanyApp.Contracts/obj
+/Exito.CompanyApp.Droid.MVP/bin/Debug/netstandard2.0
+/Exito.CompanyApp.Droid.MVP/obj
+/Exito.CompanyApp.Entities/bin/Debug/netstandard2.0
+/Exito.CompanyApp.Entities/obj
+/Exito.CompanyApp.Proxy/bin/Debug/netstandard2.0
+/Exito.CompanyApp.Proxy/obj/Debug/netstandard2.0
+/Exito.CompanyApp.Proxy/obj
+/Exito.CompanyApp.Utils/bin/Debug/netstandard2.0
+/Exito.CompanyApp.Utils/obj
+/packages

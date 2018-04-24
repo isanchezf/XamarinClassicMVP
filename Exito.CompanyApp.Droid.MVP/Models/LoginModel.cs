@@ -3,7 +3,7 @@
     using Entities;
     using Exito.CompanyApp.Contracts;
 
-    public class LoginModel : ILoginModel
+    public class LoginModel
     {
         ILoginClient _loginClient;
 
