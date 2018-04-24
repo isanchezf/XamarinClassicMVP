@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Ninject" Version="3.3.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Exito.CompanyApp.Contracts\Exito.CompanyApp.Contracts.csproj" />
+    <ProjectReference Include="..\Exito.CompanyApp.Entities\Exito.CompanyApp.Entities.csproj" />
+    <ProjectReference Include="..\Exito.CompanyApp.Proxy\Exito.CompanyApp.Proxy.csproj" />
+    <ProjectReference Include="..\Exito.CompanyApp.Utils\Exito.CompanyApp.Utils.csproj" />
+  </ItemGroup>
+
+</Project>
