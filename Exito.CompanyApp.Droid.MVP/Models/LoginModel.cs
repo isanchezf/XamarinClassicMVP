@@ -14,6 +14,10 @@
 
         public bool Authenticate(Login login)
         {
+            if (string.IsNullOrWhiteSpace(login.UserName) || string.IsNullOrWhiteSpace(login.Password))
+            {
+                return false;
+            }
             return _loginClient.Authenticate(login);
         }
     }

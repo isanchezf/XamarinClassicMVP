@@ -17,3 +17,12 @@
 /Exito.CompanyApp.Utils/bin/Debug/netstandard2.0
 /Exito.CompanyApp.Utils/obj
 /packages
+/.vs
+/Exito.AppCompany.Business/bin
+/Exito.AppCompany.Business/IOSNavigationManager.xcassets
+/Exito.AppCompany.Business/obj
+/Exito.AppCompany.IOS/obj/iPhone/Debug
+/Exito.CompanyApp.Container/obj
+/Exito.CompanyApp.Models/bin/Debug/netstandard2.0
+/Exito.CompanyApp.Models/obj
+/Exito.CompanyApp.MVP/obj/Debug/netstandard2.0

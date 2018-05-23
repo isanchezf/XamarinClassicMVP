@@ -10,6 +10,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Exito.CompanyApp.App.Container;
+using Exito.CompanyApp.Droid.MVP.Modules;
 using Ninject;
 
 namespace Exito.CompanyApp.App.Activities
@@ -21,7 +22,7 @@ namespace Exito.CompanyApp.App.Activities
         public AndroidApplication()
         {
             var settings = new NinjectSettings(); settings.LoadExtensions = false;
-            _kernel = new StandardKernel(settings, new ActivityModules());
+            _kernel = new StandardKernel(settings, new ActivityModules(), new PresenterModules());
         }
 
         public static AndroidApplication Current { get => new AndroidApplication(); }

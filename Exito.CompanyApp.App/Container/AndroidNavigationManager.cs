@@ -69,5 +69,12 @@ namespace Exito.CompanyApp.App.Container
 
             _context.StartActivity(intent);
         }
+
+        public void Navigate<TView>() where TView : IView
+        {
+            var activityType = GetActivityType<TView>();
+            Intent intent = new Intent(_context, activityType);
+            _context.StartActivity(intent);
+        }
     }
 }

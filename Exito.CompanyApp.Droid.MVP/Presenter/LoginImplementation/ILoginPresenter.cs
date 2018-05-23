@@ -8,5 +8,6 @@ namespace Exito.CompanyApp.Droid.MVP.Presenter
     public interface ILoginPresenter : IPresenter
     {
         void Authenticate();
+        void SetLoginEntity(string user, string pass);
     }
 }

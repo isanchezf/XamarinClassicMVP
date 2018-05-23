@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Exito.CompanyApp.Contracts\Exito.CompanyApp.Contracts.csproj" />
+    <ProjectReference Include="..\Exito.CompanyApp.Entities\Exito.CompanyApp.Entities.csproj" />
+  </ItemGroup>
+
+</Project>
