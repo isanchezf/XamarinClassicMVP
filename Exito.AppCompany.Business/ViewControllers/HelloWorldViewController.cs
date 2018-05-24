@@ -12,8 +12,6 @@ namespace Exito.AppCompany.Business.ViewControllers
         public HelloWorldViewController(IntPtr handle) : base(handle)
         {
         }
-
-
         #region View lifecycle
 
         public override void ViewDidLoad()

@@ -1,4 +1,4 @@
-﻿using Exito.AppCompany.Business.Referentials;
+﻿using Exito.AppCompany.Business.Container;
 using Exito.AppCompany.Business.ViewControllers;
 using Exito.CompanyApp.Contracts;
 using Exito.CompanyApp.Droid.MVP.Models;
@@ -7,14 +7,12 @@ using Exito.CompanyApp.Droid.MVP.Referentials;
 using Exito.CompanyApp.Droid.MVP.Views;
 using Exito.CompanyApp.Entities;
 using Exito.CompanyApp.Proxy;
-using Ninject;
 using System;
-
 using UIKit;
 
 namespace Exito.AppCompany.Business
 {
-    public partial class ViewController : UIViewController //BaseViewController<ILoginPresenter>, IView
+    public partial class ViewController : UIViewController
     {
         private Login _loginInput { get => new Login { UserName = Usuario.Text, Password = Usuario.Text }; }
 
@@ -24,10 +22,8 @@ namespace Exito.AppCompany.Business
 
         public ViewController(IntPtr handle) : base(handle)
         {
-            //var helloView = (HelloWorldViewController)this.Storyboard.InstantiateViewController("HelloWorld");
-            //SetNextView(helloView);
-            //InitializePresenter();
-            _loginBusiness = new LoginModel(new LoginClient());
+            var serviceClient = LoginModules.Instance.GetLoginClient;
+            _loginBusiness = new LoginModel(serviceClient);
         }
 
         public override void ViewDidLoad()
@@ -44,8 +40,6 @@ namespace Exito.AppCompany.Business
 
         partial void LoginBtn_TouchUpInside(UIButton sender)
         {
-            //Presenter.SetLoginEntity(Usuario.Text, "123456");
-            //Presenter.Authenticate();
             if (_loginBusiness.Authenticate(_loginInput))
             {
                 var helloView = (HelloWorldViewController)this.Storyboard.InstantiateViewController("HelloWorld");

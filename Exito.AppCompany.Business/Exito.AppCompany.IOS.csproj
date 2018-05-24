@@ -67,10 +67,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Referentials\ApplicationModules.cs" />
-    <Compile Include="Referentials\IOSApplication.cs" />
-    <Compile Include="Referentials\BaseViewController.cs" />
-    <Compile Include="Referentials\IOSNavigationManager.cs" />
+    <Compile Include="Container\LoginModules.cs" />
     <Compile Include="ViewControllers\HelloWorldViewController.cs" />
     <Compile Include="ViewControllers\HelloWorldViewController.designer.cs">
       <DependentUpon>HelloWorldViewController.cs</DependentUpon>
@@ -91,9 +88,6 @@
     <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Ninject, Version=3.3.4.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
-      <HintPath>..\packages\Ninject.3.3.4\lib\netstandard2.0\Ninject.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -121,12 +115,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <ImageAsset Include="IOSNavigationManager.xcassets\AppIcons.appiconset\Contents.json">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="IOSNavigationManager.xcassets\LaunchImages.launchimage\Contents.json">
-      <Visible>false</Visible>
-    </ImageAsset>
+    <Folder Include="Referentials\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

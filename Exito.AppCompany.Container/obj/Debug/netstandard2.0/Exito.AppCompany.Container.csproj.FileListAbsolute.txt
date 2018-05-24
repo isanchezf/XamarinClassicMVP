@@ -1,0 +1,9 @@
+E:\idsfGit\XamarinClasicMVP\XamarinClassicMVP\Exito.AppCompany.Container\bin\Debug\netstandard2.0\Exito.AppCompany.Container.deps.json
+E:\idsfGit\XamarinClasicMVP\XamarinClassicMVP\Exito.AppCompany.Container\bin\Debug\netstandard2.0\Exito.AppCompany.Container.dll
+E:\idsfGit\XamarinClasicMVP\XamarinClassicMVP\Exito.AppCompany.Container\bin\Debug\netstandard2.0\Exito.AppCompany.Container.pdb
+E:\idsfGit\XamarinClasicMVP\XamarinClassicMVP\Exito.AppCompany.Container\obj\Debug\netstandard2.0\Exito.AppCompany.Container.csprojResolveAssemblyReference.cache
+E:\idsfGit\XamarinClasicMVP\XamarinClassicMVP\Exito.AppCompany.Container\obj\Debug\netstandard2.0\Exito.AppCompany.Container.csproj.CoreCompileInputs.cache
+E:\idsfGit\XamarinClasicMVP\XamarinClassicMVP\Exito.AppCompany.Container\obj\Debug\netstandard2.0\Exito.AppCompany.Container.AssemblyInfoInputs.cache
+E:\idsfGit\XamarinClasicMVP\XamarinClassicMVP\Exito.AppCompany.Container\obj\Debug\netstandard2.0\Exito.AppCompany.Container.AssemblyInfo.cs
+E:\idsfGit\XamarinClasicMVP\XamarinClassicMVP\Exito.AppCompany.Container\obj\Debug\netstandard2.0\Exito.AppCompany.Container.dll
+E:\idsfGit\XamarinClasicMVP\XamarinClassicMVP\Exito.AppCompany.Container\obj\Debug\netstandard2.0\Exito.AppCompany.Container.pdb
