@@ -1,4 +1,4 @@
-﻿namespace Exito.CompanyApp.Droid.MVP.Models
+﻿namespace Exito.CompanyApp.Business.Models
 {
     using Entities;
     using Exito.CompanyApp.Contracts;

@@ -1,9 +1,9 @@
-﻿using Exito.CompanyApp.Droid.MVP.Referentials;
+﻿using Exito.CompanyApp.Business.Referentials;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Exito.CompanyApp.Droid.MVP.Presenter
+namespace Exito.CompanyApp.Business.Presenter.LoginImplementation
 {
     public interface ILoginPresenter : IPresenter
     {

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Exito.CompanyApp.Droid.MVP.Referentials
+namespace Exito.CompanyApp.Business.Referentials
 {
     public interface INavigationManager
     {

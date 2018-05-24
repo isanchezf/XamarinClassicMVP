@@ -9,7 +9,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
-using Exito.CompanyApp.Droid.MVP.Referentials;
+using Exito.CompanyApp.Business.Referentials;
 using Ninject;
 
 namespace Exito.CompanyApp.App.Activities

@@ -1,12 +1,9 @@
-﻿using Exito.AppCompany.Business.Container;
+﻿using Autofac;
+using Exito.AppCompany.Business.Container;
 using Exito.AppCompany.Business.ViewControllers;
 using Exito.CompanyApp.Contracts;
-using Exito.CompanyApp.Droid.MVP.Models;
-using Exito.CompanyApp.Droid.MVP.Presenter;
-using Exito.CompanyApp.Droid.MVP.Referentials;
-using Exito.CompanyApp.Droid.MVP.Views;
+using Exito.CompanyApp.Business.Models;
 using Exito.CompanyApp.Entities;
-using Exito.CompanyApp.Proxy;
 using System;
 using UIKit;
 
@@ -15,15 +12,14 @@ namespace Exito.AppCompany.Business
     public partial class ViewController : UIViewController
     {
         private Login _loginInput { get => new Login { UserName = Usuario.Text, Password = Usuario.Text }; }
-
-        private string _passInpunt { get => Usuario.Text; }
+        private IContainer _container;
 
         LoginModel _loginBusiness;
 
         public ViewController(IntPtr handle) : base(handle)
         {
-            var serviceClient = LoginModules.Instance.GetLoginClient;
-            _loginBusiness = new LoginModel(serviceClient);
+            _container = IoCBuilder.Build();
+            _loginBusiness = new LoginModel(_container.Resolve<ILoginClient>());
         }
 
         public override void ViewDidLoad()

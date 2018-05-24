@@ -59,6 +59,7 @@
     <CodesignKey>iPhone Developer</CodesignKey>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Container\IoCBuilder.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <None Include="GettingStarted.Xamarin" />
@@ -67,7 +68,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Container\LoginModules.cs" />
     <Compile Include="ViewControllers\HelloWorldViewController.cs" />
     <Compile Include="ViewControllers\HelloWorldViewController.designer.cs">
       <DependentUpon>HelloWorldViewController.cs</DependentUpon>
@@ -88,7 +88,12 @@
     <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="Autofac, Version=4.8.1.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\packages\Autofac.4.8.1\lib\netstandard1.1\Autofac.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
@@ -101,9 +106,9 @@
       <Project>{f1885ad8-5657-447b-aae8-5b850d015d1d}</Project>
       <Name>Exito.CompanyApp.Contracts</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Exito.CompanyApp.Droid.MVP\Exito.CompanyApp.Droid.MVP.csproj">
+    <ProjectReference Include="..\Exito.CompanyApp.Droid.MVP\Exito.CompanyApp.Business.csproj">
       <Project>{d82a7def-596f-4ee7-9ad9-98af8ec195b8}</Project>
-      <Name>Exito.CompanyApp.Droid.MVP</Name>
+      <Name>Exito.CompanyApp.Business</Name>
     </ProjectReference>
     <ProjectReference Include="..\Exito.CompanyApp.Entities\Exito.CompanyApp.Entities.csproj">
       <Project>{2f99e971-04b2-4504-8f6b-ae0a779c3925}</Project>

@@ -1,8 +1,8 @@
-﻿namespace Exito.CompanyApp.Droid.MVP.Views
+﻿namespace Exito.CompanyApp.Business.Views
 {
     using System;
     using Entities;
-    using Exito.CompanyApp.Droid.MVP.Referentials;
+    using Exito.CompanyApp.Business.Referentials;
 
     public interface ILoginView : IView
     {

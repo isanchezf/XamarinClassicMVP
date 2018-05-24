@@ -100,9 +100,9 @@
       <Project>{2f99e971-04b2-4504-8f6b-ae0a779c3925}</Project>
       <Name>Exito.CompanyApp.Entities</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Exito.CompanyApp.Droid.MVP\Exito.CompanyApp.Droid.MVP.csproj">
+    <ProjectReference Include="..\Exito.CompanyApp.Droid.MVP\Exito.CompanyApp.Business.csproj">
       <Project>{d82a7def-596f-4ee7-9ad9-98af8ec195b8}</Project>
-      <Name>Exito.CompanyApp.Droid.MVP</Name>
+      <Name>Exito.CompanyApp.Business</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

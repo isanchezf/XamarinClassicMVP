@@ -10,7 +10,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Exito.CompanyApp.App.Container;
-using Exito.CompanyApp.Droid.MVP.Modules;
+using Exito.CompanyApp.Business.Modules;
 using Ninject;
 
 namespace Exito.CompanyApp.App.Activities

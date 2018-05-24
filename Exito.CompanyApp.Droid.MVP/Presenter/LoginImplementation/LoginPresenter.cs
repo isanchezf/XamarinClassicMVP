@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using System.Text;
 using Exito.CompanyApp.Contracts;
-using Exito.CompanyApp.Droid.MVP.Models;
-using Exito.CompanyApp.Droid.MVP.Modules;
-using Exito.CompanyApp.Droid.MVP.Referentials;
-using Exito.CompanyApp.Droid.MVP.Views;
+using Exito.CompanyApp.Business.Models;
+using Exito.CompanyApp.Business.Modules;
+using Exito.CompanyApp.Business.Referentials;
+using Exito.CompanyApp.Business.Views;
 using Exito.CompanyApp.Entities;
 using Ninject;
 
-namespace Exito.CompanyApp.Droid.MVP.Presenter.LoginImplementation
+namespace Exito.CompanyApp.Business.Presenter.LoginImplementation
 {
     public abstract class LoginPresenter : ILoginPresenter
     {

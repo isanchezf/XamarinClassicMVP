@@ -1,7 +1,7 @@
-﻿namespace Exito.CompanyApp.Droid.MVP.Modules
+﻿namespace Exito.CompanyApp.Business.Modules
 {
-    using Exito.CompanyApp.Droid.MVP.Presenter;
-    using Exito.CompanyApp.Droid.MVP.Presenter.LoginImplementation;
+    using Presenter;
+    using Presenter.LoginImplementation;
     using Ninject.Modules;
     using System;
     using System.Collections.Generic;

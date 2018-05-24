@@ -1,4 +1,4 @@
-﻿namespace Exito.CompanyApp.Droid.MVP.Presenter.LoginImplementation
+﻿namespace Exito.CompanyApp.Business.Presenter.LoginImplementation
 {
     using System;
     using System.Collections.Generic;
@@ -10,7 +10,7 @@
     using Views;
     using Exito.CompanyApp.Contracts;
     using Ninject;
-    using Exito.CompanyApp.Droid.MVP.Referentials;
+    using Referentials;
 
     public class LoginPresenterDroid : LoginPresenter
     {

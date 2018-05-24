@@ -1,11 +1,11 @@
-﻿namespace Exito.CompanyApp.Droid.MVP.Presenter
+﻿namespace Exito.CompanyApp.Business.Presenter
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
-    using Exito.CompanyApp.Droid.MVP.Referentials;
-    using Exito.CompanyApp.Droid.MVP.Views;
+    using Referentials;
+    using Views;
 
     public class WellcomePresenter : IWellcomePresenter
     {

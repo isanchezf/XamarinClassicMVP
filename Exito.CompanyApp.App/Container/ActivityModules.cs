@@ -9,9 +9,9 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
-using Exito.CompanyApp.Droid.MVP.Presenter;
-using Exito.CompanyApp.Droid.MVP.Presenter.LoginImplementation;
-using Exito.CompanyApp.Droid.MVP.Referentials;
+using Exito.CompanyApp.Business.Presenter;
+using Exito.CompanyApp.Business.Presenter.LoginImplementation;
+using Exito.CompanyApp.Business.Referentials;
 using Ninject.Modules;
 
 namespace Exito.CompanyApp.App.Container

@@ -1,6 +1,6 @@
-﻿namespace Exito.CompanyApp.Droid.MVP.Views
+﻿namespace Exito.CompanyApp.Business.Views
 {
-    using Exito.CompanyApp.Droid.MVP.Referentials;
+    using Exito.CompanyApp.Business.Referentials;
     using System;
     using System.Collections.Generic;
     using System.Text;

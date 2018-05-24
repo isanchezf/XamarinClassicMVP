@@ -1,4 +1,4 @@
-﻿namespace Exito.CompanyApp.Droid.MVP.Modules
+﻿namespace Exito.CompanyApp.Business.Modules
 {
     using Exito.CompanyApp.Contracts;
     using Exito.CompanyApp.Proxy;

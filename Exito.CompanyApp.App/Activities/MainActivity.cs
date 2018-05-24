@@ -3,15 +3,9 @@
     using Android.App;
     using Android.Widget;
     using Android.OS;
-    using Droid.MVP.Views;
-    using Droid.MVP.Presenter;
-    using Android.Views;
-    using Exito.CompanyApp.Entities;
-    using Exito.CompanyApp.Droid.MVP.Modules;
-    using Exito.CompanyApp.Contracts;
-    using Ninject;
-    using Android.Content;
+    using Business.Views;
     using System;
+    using Business.Presenter.LoginImplementation;
 
     [Activity(Label = "Login")]
     public class MainActivity : BaseActivity<ILoginPresenter>, ILoginView

@@ -9,8 +9,8 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
-using Exito.CompanyApp.Droid.MVP.Presenter;
-using Exito.CompanyApp.Droid.MVP.Views;
+using Exito.CompanyApp.Business.Presenter;
+using Exito.CompanyApp.Business.Views;
 
 namespace Exito.CompanyApp.App.Activities
 {

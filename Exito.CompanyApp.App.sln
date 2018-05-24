@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.27428.2037
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exito.CompanyApp.Utils", "Exito.CompanyApp.Utils\Exito.CompanyApp.Utils.csproj", "{54F23EC1-5EB9-4E82-A406-1D7B594B2B88}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exito.CompanyApp.Droid.MVP", "Exito.CompanyApp.Droid.MVP\Exito.CompanyApp.Droid.MVP.csproj", "{D82A7DEF-596F-4EE7-9AD9-98AF8EC195B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exito.CompanyApp.Business", "Exito.CompanyApp.Droid.MVP\Exito.CompanyApp.Business.csproj", "{D82A7DEF-596F-4EE7-9AD9-98AF8EC195B8}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exito.CompanyApp.Entities", "Exito.CompanyApp.Entities\Exito.CompanyApp.Entities.csproj", "{2F99E971-04B2-4504-8F6B-AE0A779C3925}"
 EndProject
@@ -27,7 +27,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exito.CompanyApp.App", "Exi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exito.AppCompany.IOS", "Exito.AppCompany.Business\Exito.AppCompany.IOS.csproj", "{09CB57D2-22EC-4723-B7DC-7275A6FB2039}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exito.AppCompany.Container", "Exito.AppCompany.Container\Exito.AppCompany.Container.csproj", "{BB52D39D-F00E-41FD-837B-C7252C85D6A2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exito.AppCompany.Container", "Exito.AppCompany.Container\Exito.AppCompany.Container.csproj", "{BB52D39D-F00E-41FD-837B-C7252C85D6A2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

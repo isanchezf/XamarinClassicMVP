@@ -1,6 +1,6 @@
-﻿namespace Exito.CompanyApp.Droid.MVP.Presenter
+﻿namespace Exito.CompanyApp.Business.Presenter
 {
-    using Exito.CompanyApp.Droid.MVP.Referentials;
+    using Referentials;
     using System;
     using System.Collections.Generic;
     using System.Text;

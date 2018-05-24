@@ -11,8 +11,8 @@ using Android.Views;
 using Android.Widget;
 using Exito.CompanyApp.App.Activities;
 using Exito.CompanyApp.App.Container;
-using Exito.CompanyApp.Droid.MVP.Referentials;
-using Exito.CompanyApp.Droid.MVP.Views;
+using Exito.CompanyApp.Business.Referentials;
+using Exito.CompanyApp.Business.Views;
 using Ninject;
 
 namespace Exito.CompanyApp.App

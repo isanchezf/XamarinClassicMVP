@@ -10,7 +10,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
-using Exito.CompanyApp.Droid.MVP.Referentials;
+using Exito.CompanyApp.Business.Referentials;
 
 namespace Exito.CompanyApp.App.Container
 {
